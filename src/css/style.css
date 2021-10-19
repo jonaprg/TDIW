@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#layout {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* HEADER NAVIGATION */
+
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 170px auto 380px;
+    background-color: rgb(233, 233, 233);
+    padding: 10px 10px 0;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-center {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar-level-1 {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-center .nav-bar-level-1 .nav-item {
+    list-style: none;
+}
+
+.nav-bar-level-1 .nav-item a {
+    color: rgba(0, 0, 0, 0.945);
+    text-decoration: none;
+    padding: 13px 10px;
+    display: block;
+}
+
+.nav-bar-level-1 .nav-item span:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-bar-level-1 .nav-item .nav-bar-level-2 a:hover {
+    background-color: rgb(187 184 184 / 63%);
+    color: black;
+}
+
+.nav-bar-level-1 .nav-item .nav-bar-level-2 {
+    display: none;
+    position: fixed;
+    font-size: 0.9rem;
+    height: auto;
+    list-style: none;
+    background-color: #f3f3f3c2;
+    width: 100%;
+}
+
+.nav-bar-level-1 .nav-item:hover>ul {
+    display: block;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    float: right;
+}
+
+.nav-right a {
+    padding: 0 10px;
+}
+
+.nav-right input[type=text] {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.slider {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slides {
+    width: 500%;
+    height: auto;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 97%;
+    height: auto;
+}
+
+.navigation-manual {
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: rgb(226, 225, 225);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -80%;
+}

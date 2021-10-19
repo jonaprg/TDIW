@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "SHAIN"
+AuthUserFile /home/TDIW/tdiw-f5/public_html/.htpasswd
+#Require valid-user
