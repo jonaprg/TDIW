@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./src/css/loginStyle.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes" />
+    <link rel="stylesheet" href="../css/loginStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <?php include "header.html"; ?>
 
 </head>
 
 <body>
+<div id="layout">
+    <header class="container">
+        <?php include "nav.html"; ?>
+    </header>
     <form class="formulario">
         <h1>Iniciar Sesión</h1>
         <div class="container">
@@ -25,6 +28,7 @@
             <p>¿No tienes una cuenta? <a class="link" href="register.html">regístrate</a></p>
         </div>
     </form>
+</div>
 </body>
 
 </html>

@@ -43,7 +43,7 @@
         </div>
 
         <input type="submit" value="Regístrate" class="button">
-        <p>¿Ya tienes una cuenta?  <a class="link" href="login.html">Iniciar Sesión</a></p>
+        <p>¿Ya tienes una cuenta?  <a class="link" href="login.php">Iniciar Sesión</a></p>
     </div>
 </form>
 </body>
