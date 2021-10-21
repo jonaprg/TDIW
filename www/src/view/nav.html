@@ -6,24 +6,16 @@
     <div class="nav-center">
         <ul class="nav-bar-level-1">
             <li class="nav-item"><a href=""><span>Mujeres</span></a>
-                <ul class="nav-bar-level-2">
-                    <li class="nav-item-level-2 "><a href="src/view/list_products.php">Cazadoras</a></li>
-                </ul>
+
             </li>
             <li class="nav-item"><a href=""><span>Hombres</span></a>
-                <ul class="nav-bar-level-2">
-                    <li class="nav-item-level-2 "><a href="src/view/list_products.php">Cazadoras</a></li>
-                </ul>
+
             </li>
             <li class="nav-item"><a href=""><span>Niños</span></a>
-                <ul class="nav-bar-level-2">
-                    <li class="nav-item-level-2 "><a href="src/view/list_products.php">Cazadoras</a></li>
-                </ul>
+
             </li>
             <li class="nav-item"><a href=""><span>Niñas</span></a>
-                <ul class="nav-bar-level-2">
-                    <li class="nav-item-level-2 "><a href="src/view/list_products.php">Cazadoras</a></li>
-                </ul>
+
             </li>
         </ul>
     </div>
