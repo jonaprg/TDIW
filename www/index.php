@@ -1,23 +1,22 @@
 <?php
+require_once __DIR__ . '/config.php';
 
-$request = $_SERVER['REQUEST_URI'];
+$request = isset($_GET['request']) ? $_GET['request'] : null;
 
 switch ($request) {
-    case '':
-    case '/' :
-        require __DIR__ . '/src/view/index.php';
-        break;
     case '/login' :
-        require __DIR__ . '/src/view/login.php';
+        require __DIR__ . '/src/resource/resource_login_register.php';
         break;
-    case '/register' :
-        require  __DIR__ . '/src/view/register.php';
+    case '/categories' :
+        require __DIR__ . 'src/resource/resource_category_list.php';
         break;
-    case '/list_products' :
-        require __DIR__ . '/src/view/list_products.php';
+    case '/products' :
+        require __DIR__ . 'src/resource/resource_list_products.php';
+        break;
+    case '/product' :
+        require __DIR__ . 'src/resource/resource_product_datail.php';
         break;
     default:
-        http_response_code(404);
-        require __DIR__ . '/src/view/404.php';
+        require __DIR__ . '/src/resource/resource_category_list.php';
         break;
 }
