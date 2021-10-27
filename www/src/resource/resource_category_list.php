@@ -10,7 +10,7 @@
 <body>
 <div id="layout">
     <header class="container">
-        <?php include __DIR__ . "/../view/nav.html"; ?>
+        <?php include __DIR__ . "/../view/nav.php"; ?>
     </header>
     <div class="app">
         <?php require __DIR__ . '/../controller/category_list.php';?>

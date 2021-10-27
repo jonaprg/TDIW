@@ -9,7 +9,7 @@
 <body>
 <div id="layout">
     <header class="container">
-        <?php include "./nav.html"; ?>
+        <?php include "./nav.php"; ?>
     </header>
 
 

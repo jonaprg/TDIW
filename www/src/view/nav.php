@@ -5,18 +5,12 @@
     </div>
     <div class="nav-center">
         <ul class="nav-bar-level-1">
-            <li class="nav-item"><a href=""><span>Mujeres</span></a>
-
-            </li>
-            <li class="nav-item"><a href=""><span>Hombres</span></a>
-
-            </li>
-            <li class="nav-item"><a href=""><span>Niños</span></a>
-
-            </li>
-            <li class="nav-item"><a href=""><span>Niñas</span></a>
-
-            </li>
+            <li class="nav-item"><a href="<?php __DIR__ . ""?>"><span>Sudaderas</span></a></li>
+            <li class="nav-item"><a href=""><span>Pantalones</span></a></li>
+            <li class="nav-item"><a href=""><span>Abrigos</span></a></li>
+            <li class="nav-item"><a href=""><span>Camisetas</span></a></li>
+            <li class="nav-item"><a href=""><span>Camisas</span></a></li>
+            <li class="nav-item"><a href=""><span>Zapatos</span></a></li>
         </ul>
     </div>
 

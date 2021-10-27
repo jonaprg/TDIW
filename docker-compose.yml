@@ -1,21 +1,21 @@
 version: "2"
 services:
-    www:
+    shein:
         build: .
         ports: 
-            - "8001:80"
+            - "8000:80"
         volumes:
             - ./www:/var/www/html/
         links:
-            - db
+            - shain-db
         networks:
             - default
-    db:
+    shain-db:
         image: mysql
         ports: 
-            - "3306:3306"
+            - "3366:3366"
         environment:
-            MYSQL_DATABASE: myDb
+            MYSQL_DATABASE: shain
             MYSQL_USER: user
             MYSQL_PASSWORD: test
             MYSQL_ROOT_PASSWORD: test
@@ -27,9 +27,9 @@ services:
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         links: 
-            - db:db
+            - shain-db:db
         ports:
-            - 8000:80
+            - 8001:80
         environment:
             MYSQL_USER: user
             MYSQL_PASSWORD: test

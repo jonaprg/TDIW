@@ -11,7 +11,7 @@
 <body>
 <div id="layout">
     <header class="container">
-        <?php include "nav.html"; ?>
+        <?php include "nav.php"; ?>
     </header>
     <form class="formulario">
         <h1>Iniciar Sesión</h1>
