@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../css/loginStyle.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="resource/css/loginStyle.css">
+    <link rel="stylesheet" href="resource/css/style.css">
     <?php include "header.html"; ?>
 
 </head>

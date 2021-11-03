@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/loginStyle.css">
+    <link rel="stylesheet" href="resource/css/loginStyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
 </head>
