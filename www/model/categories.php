@@ -4,6 +4,7 @@
  * @return array
  */
 function getCategories() : array {
+
     $conn = connectDB::conn();
     $sql = "SELECT * FROM categories";
     $stmt = $conn->query($sql, PDO::FETCH_ASSOC);
