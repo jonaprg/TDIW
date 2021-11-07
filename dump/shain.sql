@@ -25,19 +25,19 @@ CREATE TABLE IF NOT EXISTS comandes (
 
 CREATE TABLE IF NOT EXISTS categories (
     id int(4) NOT NULL AUTO_INCREMENT,
-    nom varchar(20) NOT NULL,
+    nom varchar(50) NOT NULL,
     url_image varchar(100) NOT NULL,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS productes (
     id int(4) NOT NULL AUTO_INCREMENT,
-    nom varchar(20) NOT NULL,
+    nom varchar(50) NOT NULL,
     preu float(20,2) NOT NULL,
     url_image varchar(100) NOT NULL,
-    talla VARCHAR (10) NOT NULL,
-    color VARCHAR (20) NOT NULL,
-    descripcio varchar(100) NOT NULL,
+    talla VARCHAR (50) NOT NULL,
+    color VARCHAR (50) NOT NULL,
+    descripcio varchar(500) NOT NULL,
     id_categoria int(4) NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT FOREIGN KEY fk_productes_categories(id_categoria) REFERENCES categories(id)
