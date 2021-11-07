@@ -11,12 +11,9 @@
     <div class="nav-center">
         <ul class="nav-bar-level-1">
             <?php foreach ($categories as $category): ?>
-                <li class="nav-item">
-                    <a href="">
-                    <span>
-                        <?php echo $category['nom']; ?>
-                    </span></a>
-                </li>
+            <li class="nav-item">
+                <a href=""><span><?php echo $category['nom']; ?></span></a>
+            </li>
             <?php endforeach ?>
         </ul>
     </div>
@@ -24,11 +21,11 @@
     <div class="nav-right">
         <a title="My account" href="hp"><img src="/view/resource/img/icons/icon_human.png" width="25px"></a>
         <a title="Shooping Cart" href="/"><img src="/view/resource/img/icons/icon_ShoppingCart.png" width="25px"></a>
-        <a title="Help" href="/"><img src="/view/resource/img/icons/icon_help.png" width="25px"></a>
         <a title="Search"><img src="/view/resource/img/icons/icon_search.png" width="25px"></a>
+        <!--
         <div class="nav_search">
             <input type="text" placeholder="Search..">
-        </div>
+        </div>-->
 
     </div>
 </div>

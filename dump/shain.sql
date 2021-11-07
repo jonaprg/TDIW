@@ -62,12 +62,12 @@ INSERT INTO usuaris (`nom`, `email`, `password`, `poblacio`, `adreca`, `codi_pos
 
 INSERT INTO categories (`nom`, `url_image`)
     VALUES
-    ('Sudaderas', '/src/img/categories/sudadera.png'),
-    ('Pantalones', '/src/img/categories/pantalones.png'),
-    ('Abrigos', '/src/img/categories/abrigos.png'),
-    ('Camisetas', '/src/img/categories/camisetas.png'),
-    ('Camisas', '/src/img/categories/camisas.png'),
-    ('Zapatos', '/src/img/categories/zapatos.png');
+    ('Sudaderas', '/view/resource/img/categories/sudadera.png'),
+    ('Pantalones', '/view/resource/img/categories/pantalones.png'),
+    ('Abrigos', '/view/resource/img/categories/abrigos.png'),
+    ('Camisetas', '/view/resource/img/categories/camisetas.png'),
+    ('Camisas', '/view/resource/img/categories/camisas.png'),
+    ('Zapatos', '/view/resource/img/categories/zapatos.png');
 
 
 INSERT INTO productes(`nom`, `preu`, `url_image`, `descripcio`, `talla`, `color`, `id_categoria`)

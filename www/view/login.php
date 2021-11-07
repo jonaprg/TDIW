@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="resource/css/loginStyle.css">
     <link rel="stylesheet" href="resource/css/style.css">
-    <?php include "header.html"; ?>
+    <?php include "header.php"; ?>
 
 </head>
 

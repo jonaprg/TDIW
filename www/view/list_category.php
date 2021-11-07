@@ -1,11 +1,12 @@
-<div class="row">
-    <ul>
-        <?php var_dump($categories); ?>
-        <?php foreach ($categories as $category): ?>
-            <li class="col">
-                <a href="index.php?request=products&category_id="<?php echo $category['id'] ?>"></a>
+    <?php foreach ($categories as $category): ?>
+    <div class="card-category">
+        <div class="img-category">
+            <a href="index.php?request=products&category_id=<?php echo $category['id'] ?>">
                 <img src="<?php echo $category['url_image'] ?>">
-            </li>
-        <?php endforeach;?>
-    </ul>
-</div>
+            </a>
+        </div>
+        <div class="content-category">
+            <span><?php echo $category['nom'] ?></span>
+        </div>
+    </div>
+    <?php endforeach;?>
