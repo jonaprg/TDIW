@@ -12,21 +12,25 @@
     background-color: white;
 }
 
-.img-category a img{
+.img-category img{
     max-width: 100%;
     border-radius: 5px;
 }
 .content-category {
     position: absolute;
-    color: white;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
+    border: 2px solid #A9B2AC;
     padding: 5px;
-
-
 }
 
 .content-category span {
     letter-spacing: 2px;
     font-size: 40px;
+    color: white;
+
+}
+
+.content-category:hover {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #A9B2AC;
 }

@@ -11,6 +11,9 @@
 </head>
 <body>
 <div id="layout">
+    <header>
+        <?php include __DIR__ . "/../view/nav.php"; ?>
+    </header>
     <div class="categories-container">
         <?php require __DIR__ . '/../controller/category_list.php';?>
 

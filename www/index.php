@@ -1,21 +1,23 @@
 <?php
 require_once __DIR__ . '/config.php';
+session_start();
 
-$request = isset($_GET['request']) ? $_GET['request'] : null;
-
+$request = $_GET['action'] ?? null;
 switch ($request) {
-    case '/login' :
-        require __DIR__ . '/resource/resource_login_register.php';
+    case 'login' :
+        require __DIR__ . '/resource/resource_login.php';
         break;
-    case '/categories' :
-        require __DIR__ . '/resource/resource_category_list.php';
+    case 'register' :
+        require __DIR__ . '/resource/resource_register.php';
         break;
-    case '/products' :
+    case 'products' :
         require __DIR__ . '/resource/resource_list_products.php';
         break;
-    case '/product' :
+    case 'product' :
         require __DIR__ . '/resource/resource_product_datail.php';
         break;
+    case 'logout' :
+        require __DIR__ .'/resource/resource_logout.php';
     default:
         require __DIR__ . '/resource/resource_category_list.php';
         break;
