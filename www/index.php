@@ -14,7 +14,7 @@ switch ($request) {
         require __DIR__ . '/resource/resource_list_products.php';
         break;
     case 'product' :
-        require __DIR__ . '/resource/resource_product_datail.php';
+        require __DIR__ . '/resource/resource_product_detail.php';
         break;
     case 'logout' :
         require __DIR__ .'/resource/resource_logout.php';

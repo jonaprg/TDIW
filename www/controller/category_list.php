@@ -6,3 +6,4 @@ $categories = getCategories();
 
 require_once __DIR__ . '/../view/list_category.php';
 
+?>
