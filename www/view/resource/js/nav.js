@@ -9,9 +9,10 @@ $(function() {
 });
 
 $(document).ready(function(){
+
     $(".categories").click(function(){
         id_category = $(this).attr('id')
-        $(".categories-container").load("index.php?action=products&category_id="+ id_category, function () {
+        $(document).find(".container-categories").load("index.php?action=products&category_id="+ id_category, () => {
         });
     });
 });

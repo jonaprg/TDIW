@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ .'/../model/connectDB.php';
-require_once __DIR__ . '/../model/register.php';
+require_once __DIR__ . '/../model/m_register.php';
 
 session_start();
 
@@ -36,4 +36,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register']) && !empty
     return;
 }
 
-require_once __DIR__ . '/../view/register.php';
+require_once __DIR__ . '/../view/v_register.php';

@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../model/connectDB.php';
-require_once __DIR__ . '/../model/login.php';
+require_once __DIR__ . '/../model/m_login.php';
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $filters = filter_input_array(
@@ -20,4 +20,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once __DIR__ . '/../resource/resource_portada.php';
     return;
 }
-require_once __DIR__ . '/../view/login.php';
+require_once __DIR__ . '/../view/v_login.php';

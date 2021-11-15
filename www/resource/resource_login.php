@@ -4,7 +4,7 @@
 <head>
     <title>SHAIN - Login</title>
     <?php include __DIR__ . "/../view/header.php"; ?>
-    <link rel="stylesheet" href="<?php echo '/../view/resource/css/style.css'?>">
+    <link rel="stylesheet" href="<?php echo '/../view/resource/css/style_nav.css'?>">
     <link rel="stylesheet" href="<?php echo '/../view/resource/css/style_login_signup.css'?>"
 
 </head>
@@ -13,7 +13,7 @@
     <header>
         <?php include __DIR__ . "/../view/nav.php"; ?>
     </header>
-    <?php require __DIR__ . '/../controller/login.php';?>
+    <?php require __DIR__ . '/../controller/c_login.php';?>
 
 </div>
 </body>

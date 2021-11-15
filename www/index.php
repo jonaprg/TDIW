@@ -11,14 +11,15 @@ switch ($request) {
         require __DIR__ . '/resource/resource_register.php';
         break;
     case 'products' :
-        require __DIR__ . '/resource/resource_list_products.php';
+        require __DIR__ . '/resource/resource_products.php';
         break;
-    case 'product' :
+    case 'productDetail' :
         require __DIR__ . '/resource/resource_product_detail.php';
         break;
     case 'logout' :
         require __DIR__ .'/resource/resource_logout.php';
+        break;
     default:
-        require __DIR__ . '/resource/resource_category_list.php';
+        require __DIR__ . '/resource/resource_portada.php';
         break;
 }
