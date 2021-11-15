@@ -10,14 +10,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]
     );
 
-    $email = $filters['email'];
-    $password = $filters['password'];
+    $email = stripslashes($filters['email']);
+    $password = stripslashes($filters['password']);
 
 
     $user = login($email, $password);
-    $_SESSION['userId'] = $user['id'];
-
-    require_once __DIR__ . '/../resource/resource_portada.php';
-    return;
+    if($user) {
+        $_SESSION['userId'] = $user['id'];
+        require __DIR__ . '/../resource/resource_login_success.php';
+        return;
+    }
 }
 require_once __DIR__ . '/../view/v_login.php';

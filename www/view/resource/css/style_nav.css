@@ -86,11 +86,17 @@ nav a:hover {
 .bars:before { top: 5px;}
 .bars:after {top: -5px;}
 
+
+
 @media all and (min-width: 468px) {
     .menu {
         justify-content: center;
     }
-
+    .menu #profile .nav-session-start {
+        display:block;
+        min-width:140px;
+        background-color: #AFA98D;
+    }
     .nav-logo {
         flex: 1;
     }
@@ -122,6 +128,11 @@ nav a:hover {
     .nav-item {
         display: block;
         width: auto;
+    }
+
+    .menu #profile .nav-session-start {
+        position: absolute;
+        right: 60px;
     }
 
     .toggle {

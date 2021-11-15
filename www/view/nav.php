@@ -9,13 +9,12 @@
         </li>
         <?php endforeach ?>
         <?php if(isset($_SESSION['userId'])): ?>
-        <li class="nav-item">
-            <a title="My account" href="/"><img src="/view/resource/img/icons/icon_human.png" width="25px"></a>
+        <li class="nav-item" id="profile">
+            <img src="/view/resource/img/icons/icon_human.png" width="25px">
             <ul class="nav-session-start">
                 <li class="nav-item-session"><a href="/"><span>Perfil</span></a></li>
                 <li class="nav-item-session"><a href="/"><span>Mis pedidos</span></a></li>
                 <li class="nav-item-session"><a href="?action=logout"><span>Cerrar sessión</span></a></li>
-
             </ul>
         </li>
         <li class="nav-item">

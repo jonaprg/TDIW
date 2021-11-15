@@ -4,10 +4,6 @@
 <head>
     <title>SHAIN - Category list</title>
     <?php include __DIR__ . "/../view/header.php"; ?>
-    <link rel="stylesheet" href="<?php echo '/view/resource/css/style_nav.css'?>">
-    <link rel="stylesheet" href="<?php echo '/view/resource/css/style_categories.css' ?>">
-    <link rel="stylesheet" href="<?php echo '/view/resource/css/style_products.css' ?>">
-
 </head>
 <body>
 <div id="layout">

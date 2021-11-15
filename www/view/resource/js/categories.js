@@ -1,7 +1,15 @@
 $(document).ready(function(){
     $(".card-category").click(function(){
         id_category = $(this).attr('id')
-        $(".container-categories").load("index.php?action=products&category_id="+ id_category, () => {
-        });
+        $.ajax(
+            {
+                type:'GET',
+                url:'?action=products',
+                data:"category_id=" + id_category,
+                success: function(data){
+                    $( ".container-categories" ).html(data).show()
+                }
+            }
+        );
     });
 });
