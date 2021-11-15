@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS usuaris (
     id int(4) NOT NULL AUTO_INCREMENT,
     nom varchar(50) NOT NULL,
     email varchar(50) NOT NULL,
-    password varchar(20) NOT NULL,
+    password varchar(80) NOT NULL,
     poblacio varchar(50) NOT NULL,
     adreca varchar(50) NOT NULL,
     codi_postal varchar(5) not null,
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS linies_comandes (
 
 INSERT INTO usuaris (`nom`, `email`, `password`, `poblacio`, `adreca`, `codi_postal`)
     VALUES
-    ('admin', 'admin@admin.com', 'admin', 'Barcelona', 'Carrer admin', '08300');
+    ('admin', 'admin@admin.com', '$2a$12$a9IYraTIDvJ1FOc3GVdFIe1sjEWsVSXXTYkjfpVWtCWakpgIh1dZ2', 'Barcelona', 'Carrer admin', '08300');
 
 INSERT INTO categories (`nom`, `url_image`)
     VALUES
