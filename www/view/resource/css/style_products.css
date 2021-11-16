@@ -18,13 +18,13 @@
 }
 .card-product .content-product {
     position: absolute;
-    border: 2px solid #A9B2AC;
     padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .card-product .content-product span {
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 17px;
     color: black;
 }
 
@@ -32,5 +32,73 @@
     padding: 5px;
     font-weight: bold;
     background-color: #A9B2AC;
+
 }
+
+.product-detail{
+    width: 1360px;
+    height: 680px;
+    margin: 5px auto;
+    display:flex;
+    align-items: center;
+    border: 3px solid rgba(169, 178, 172, 0.67);
+}
+
+.product-detail img{
+    position:absolute;
+    height: 670px;
+    width: 460px;
+    margin-left:2px;
+}
+
+.content-detail{
+    margin-left:520px;
+    margin-right:20px;
+}
+
+.newarrival {
+    background: #194f19;
+    width: 60px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.content-detail h1{
+    font-family: "Optima, sans-serif";
+    font-size: 35px;
+    color:#555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.preu{
+    font-size: 25px;
+    font-weight: bold;
+    color:#fe980f;
+    margin: 10px 0;
+    padding-top: 5px;
+}
+.descripcio{
+    font-family: "DejaVu Sans Mono, monospace";
+    font-size: 16px;
+    padding:15px;
+    text-align: center;
+    color:grey;
+}
+
+.content-detail p{
+    font-size: 18px;
+    padding:10px;
+    text-align: center;
+
+}
+
+.content-detail div{
+    font-size: 18px;
+    padding:15px;
+    color: #444343;
+    text-align: center;
+}
+
+
 
