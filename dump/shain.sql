@@ -1,6 +1,7 @@
 
 CREATE DATABASE IF NOT EXISTS shain;
 USE shain;
+SET NAMES 'utf8mb4';
 
 CREATE TABLE IF NOT EXISTS usuaris (
     id int(4) NOT NULL AUTO_INCREMENT,
