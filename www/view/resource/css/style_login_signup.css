@@ -5,7 +5,7 @@
     padding: 3px;
 }
 
-h1{
+.formulario h1{
     text-align: center;
     color: #898980;
     font-size: 35px;
@@ -15,20 +15,30 @@ input[type="text"],
 input[type="password"],
 input[type="email"]{
     font-size: 16px;
-    width: 90%;
+    width: 100%;
     padding: 10px;
-    border: none;
+
 }
 
 .input-container{
     margin-bottom: 15px;
-    border: 1px solid #aaa;
 }
 
-.icon{
-    min-width: 50px;
-    color: #7a7a7a;
-    text-align: center;
+.input-container.success input {
+    border-color: #194f19;
+}
+
+.input-container.error input {
+    border-color: #9e0f0f;
+}
+
+.input-container small {
+    visibility: hidden;
+}
+
+.input-container.error small {
+    color: #9e0f0f;
+    visibility: visible;
 }
 
 .button{
@@ -58,6 +68,10 @@ p{
 .link:hover{
     color: #BCD0C7;
 }
+
+
+
+
 
 @media(min-width:768px)
 {

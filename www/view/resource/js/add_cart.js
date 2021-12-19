@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    $(".card-product").click(function(){
+    $(".item-add").click(function(){
         id_product = $(this).attr('id')
         $.ajax(
             {
                 type:'GET',
-                url:'?action=productDetail',
+                url:'?action=add_to_cart',
                 data:"id_producte=" + id_product,
                 success: function(data){
-                    $( ".container" ).html(data).show()
+                    $( "footer" ).html(data).show()
                 }
             }
         );

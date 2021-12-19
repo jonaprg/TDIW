@@ -1,14 +1,13 @@
-<?php include_once __DIR__ . '/../controller/c_controller_nav.php' ?>
 <script src="/view/resource/js/nav.js"></script>
 <nav>
     <ul class="menu">
         <li class="nav-logo"><a href="/">SHAIN</a></li>
-        <?php foreach ($categories as $category): ?>
-        <li class="nav-item categories" id="<?php echo $category['id'] ?>">
-            <span><?php echo $category['nom']; ?></span>
+        <?php foreach ($categories as $category):?>
+        <li class="nav-item categories" id="<?php echo $category['id'];?>">
+            <span><?php echo htmlentities($category['nom'], ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></span>
         </li>
-        <?php endforeach ?>
-        <?php if(isset($_SESSION['userId'])): ?>
+        <?php endforeach?>
+        <?php if(isset($_SESSION['userId'])):?>
         <li class="nav-item" id="profile">
             <img src="/view/resource/img/icons/icon_human.png" width="25px">
             <ul class="nav-session-start">
@@ -20,12 +19,12 @@
         <li class="nav-item">
             <a title="Shooping Cart" href="/"><img src="/view/resource/img/icons/icon_ShoppingCart.png" width="25px"></a>
         </li>
-        <?php  else: ?>
+        <?php else: ?>
         <li class="nav-item nav-button">
-            <a title="Login" href="?action=login">Iniciar Sesión</a>
+            <a title="Login" href="index.php?action=login">Iniciar Sesión</a>
         </li>
         <li class="nav-item nav-button">
-            <a title="Register" href="?action=register">Registrarse</a>
+            <a title="Register" href="index.php?action=register">Registrarse</a>
         </li>
         <?php endif; ?>
         <li class="toggle">
@@ -33,7 +32,3 @@
         </li>
     </ul>
 </nav>
-
-<script>
-
-</script>

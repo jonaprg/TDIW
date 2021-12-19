@@ -1,11 +1,11 @@
 <div class="container-products">
 <?php foreach ($products as $product): ?>
-    <div class="card-product" id="<?php echo $product['id'] ?>">
+    <div class="card-product" id="<?php echo $product['id']; ?>">
         <div class="img-product">
-            <img src="<?php echo $product['url_image'] ?>">
+            <img src="<?php echo $product['url_image']; ?>">
         </div>
         <div class="content-product">
-            <span><?php echo $product['nom'] ?></span>
+            <span><?php echo $product['nom']; ?></span>
         </div>
     </div>
 <?php endforeach;?>

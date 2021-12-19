@@ -7,7 +7,7 @@ $(document).ready(function(){
                 url:'?action=products',
                 data:"category_id=" + id_category,
                 success: function(data){
-                    $( ".container-categories" ).html(data).show()
+                    $( ".container" ).html(data).show()
                 }
             }
         );

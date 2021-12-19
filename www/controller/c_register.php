@@ -2,7 +2,9 @@
 require_once __DIR__ .'/../model/connectDB.php';
 require_once __DIR__ . '/../model/m_register.php';
 
+var_dump($_POST);
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register']) && !empty($_POST['register'])){
+
     $filters = filter_input_array(
         INPUT_POST, [
             'email' => FILTER_VALIDATE_EMAIL,
@@ -21,13 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register']) && !empty
     $postal = stripslashes($filters['postal']);
     $password_hash =  password_hash($password, PASSWORD_DEFAULT);
     if(registre($name, $email, $password_hash, $city, $address, $postal)) {
-        require_once __DIR__ . '/../resource/resource_register_success.php';
-        return;
-    }
-    else {
-        echo "<p>Aquest usuari ja existeix</p>";
+        header('Location: index.php');
+    }else {
         require_once __DIR__ . '/../view/v_register.php';
-
     }
 }
 

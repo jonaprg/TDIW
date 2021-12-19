@@ -9,6 +9,9 @@ switch ($request) {
     case 'register' :
         require __DIR__ . '/resource_register.php';
         break;
+    case 'profile' :
+        require __DIR__ . '/resource_perfil.php';
+        break;
     case 'products' :
         require __DIR__ . '/resource_products.php';
         break;
@@ -18,6 +21,10 @@ switch ($request) {
     case 'logout' :
         require __DIR__ . '/resource_logout.php';
         break;
+    case 'add_to_cart' :
+        require __DIR__ . '/resource_add_to_cart.php';
+        break;
+    case 'portada' :
     default:
         require __DIR__ . '/resource_portada.php';
         break;

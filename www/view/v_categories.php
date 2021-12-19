@@ -1,11 +1,11 @@
 <div class="container-categories">
     <?php foreach ($categories as $category): ?>
-    <div class="card-category" id="<?php echo $category['id'] ?>">
+    <div class="card-category" id="<?php echo $category['id']; ?>">
             <div class="img-category">
-                <img src="<?php echo $category['url_image'] ?>">
+                <img src="<?php echo $category['url_image']; ?>">
             </div>
             <div class="content-category">
-                <span><?php echo $category['nom'] ?></span>
+                <span><?php echo $category['nom']; ?></span>
             </div>
     </div>
     <?php endforeach;?>

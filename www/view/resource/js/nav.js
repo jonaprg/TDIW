@@ -9,6 +9,9 @@ $(function() {
 });
 
 $(document).ready(function(){
+    $("#profile").click(function(){
+        $('.nav-session-start').toggle();
+    });
 
     $(".categories").click(function(){
         id_category = $(this).attr('id');
@@ -18,15 +21,12 @@ $(document).ready(function(){
                 url:'?action=products',
                 data:"category_id=" + id_category,
                 success: function(data){
-                    $(document).find( ".container-categories" ).html(data).show()
+                    $( ".container" ).html(data).show()
                 }
             }
         );
     });
 });
 
-$(document).ready(function(){
-    $("#profile").click(function(){
-        $('.nav-session-start').toggle();
-    });
-});
+
+

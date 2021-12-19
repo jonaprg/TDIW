@@ -100,5 +100,27 @@
     text-align: center;
 }
 
+.item-add {
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: #BCD0C7;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+#add_to_cart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#add_to_cart input[type='number'] {
+    font-size: 20px;
+}
+.item-add:hover {
+    background-color: #7fa696;
+}
+
+
+
 
 
