@@ -1,15 +1,20 @@
 $(document).ready(function(){
-    $(".item-add").click(function(){
-        id_product = $(this).attr('id')
-        $.ajax(
-            {
-                type:'GET',
-                url:'?action=add_to_cart',
-                data:"id_producte=" + id_product,
-                success: function(data){
-                    $( "footer" ).html(data).show()
+    $(".add-item-cart").click(function(){
+        let id_product = $(this).attr('id')
+        let quantity = $('#quantity').val()
+        if (quantity > 0) {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '?action=addToCart',
+                    data: 'id-product=' + id_product + '&quantity=' + quantity,
+                    success: function (data) {
+                        document.getElementById("correctAdd").innerHTML = data;
+                        $('#cart').load('index.php?action=summaryCart');
+                    }
                 }
-            }
-        );
+            )
+        }
     });
 });
+

@@ -7,7 +7,19 @@
 #layout {
     font-family: 'Rubik', sans-serif;
 }
+/* SUMMARY CART */
+#cart {
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
 
+#cart .item-summary {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #A9B2AC;
+    margin-right: 10px;
+}
 /* HEADER NAVIGATION */
 
 nav {
@@ -42,7 +54,6 @@ nav a:hover {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -89,12 +100,9 @@ nav a:hover {
 
 
 @media all and (min-width: 468px) {
-    .menu {
-        justify-content: center;
-    }
-    .menu #profile .nav-session-start {
+
+    .menu #profile .nav-session {
         display:block;
-        min-width:140px;
         background-color: #AFA98D;
     }
     .nav-logo {
@@ -130,9 +138,11 @@ nav a:hover {
         width: auto;
     }
 
-    .menu #profile .nav-session-start {
+    .menu #profile .nav-session {
+        display: none;
         position: absolute;
-        right: 60px;
+        top: 59px;
+        right: 0;
     }
 
     .toggle {

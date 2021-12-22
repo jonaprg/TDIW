@@ -1,16 +1,15 @@
-$(function() {
+$(document).ready(function(){
+
     $(".toggle").on("click", function() {
-        if ($(".nav-item").hasClass("active")) {
+        if ($(".nav-item ").hasClass("active")) {
             $(".nav-item").removeClass("active");
         } else {
             $(".nav-item").addClass("active");
         }
     });
-});
 
-$(document).ready(function(){
     $("#profile").click(function(){
-        $('.nav-session-start').toggle();
+        $('.nav-session').toggle();
     });
 
     $(".categories").click(function(){

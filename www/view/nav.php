@@ -1,4 +1,3 @@
-<script src="/view/resource/js/nav.js"></script>
 <nav>
     <ul class="menu">
         <li class="nav-logo"><a href="/">SHAIN</a></li>
@@ -7,17 +6,17 @@
             <span><?php echo htmlentities($category['nom'], ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></span>
         </li>
         <?php endforeach?>
+        <li class="nav-item" id="checkoutCart">
+            <img src="/view/resource/img/icons/icon_ShoppingCart.png" width="25px">
+        </li>
         <?php if(isset($_SESSION['userId'])):?>
         <li class="nav-item" id="profile">
             <img src="/view/resource/img/icons/icon_human.png" width="25px">
-            <ul class="nav-session-start">
+            <ul class="nav-session">
                 <li class="nav-item-session"><a href="/"><span>Perfil</span></a></li>
                 <li class="nav-item-session"><a href="/"><span>Mis pedidos</span></a></li>
                 <li class="nav-item-session"><a href="?action=logout"><span>Cerrar sessión</span></a></li>
             </ul>
-        </li>
-        <li class="nav-item">
-            <a title="Shooping Cart" href="/"><img src="/view/resource/img/icons/icon_ShoppingCart.png" width="25px"></a>
         </li>
         <?php else: ?>
         <li class="nav-item nav-button">
@@ -32,3 +31,4 @@
         </li>
     </ul>
 </nav>
+

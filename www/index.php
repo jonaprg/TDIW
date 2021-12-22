@@ -2,6 +2,7 @@
 require_once __DIR__ . '/config.php';
 session_start();
 $request = $_GET['action'] ?? null;
+
 switch ($request) {
     case 'login' :
         require __DIR__ . '/resource_login.php';
@@ -21,8 +22,14 @@ switch ($request) {
     case 'logout' :
         require __DIR__ . '/resource_logout.php';
         break;
-    case 'add_to_cart' :
+    case 'addToCart' :
         require __DIR__ . '/resource_add_to_cart.php';
+        break;
+    case 'checkoutCart' :
+        require __DIR__ . '/resource_checkoutCart.php';
+        break;
+    case 'summaryCart' :
+        require __DIR__ . '/resource_summaryCart.php';
         break;
     case 'portada' :
     default:

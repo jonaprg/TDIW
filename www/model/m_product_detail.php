@@ -9,5 +9,5 @@ function getDetallByProduct($productId) : array {
     $sql = $conn->prepare("SELECT * FROM productes WHERE id = :product_id LIMIT 1");
     $sql->bindValue(':product_id', $productId);
     $sql->execute();
-    return $sql->fetchAll(PDO::FETCH_ASSOC);
+    return $sql->fetch(PDO::FETCH_ASSOC);
 }
