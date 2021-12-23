@@ -43,7 +43,7 @@ if (isset($_SESSION['cart'])) { //HAY CESTA
     echo "Se ha añadido correctamente, con un total de " . $item_array['qty'] . " productos.";
 }
 
-foreach ($_SESSION['cart'] as $key => $value) {
+foreach ($_SESSION['cart'] as $key => $value) { //SE AÑADE EL PRECIO TOTAL DE CADA PRODUCTO AL PRECIO TOTAL DE LA CESTA
     $totalPrice = $_SESSION['cart'][$key]['priceTotal'] + $totalPrice;
     $_SESSION['cart']['total_price'] = $totalPrice;
 }

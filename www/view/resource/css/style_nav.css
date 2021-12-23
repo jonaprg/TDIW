@@ -20,6 +20,17 @@
     background-color: #A9B2AC;
     margin-right: 10px;
 }
+
+#cart #cart-clear-summary a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart #cart-clear-summary:hover {
+    background-color: #BCD0C7;
+}
+
+
 /* HEADER NAVIGATION */
 
 nav {
