@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="<?php echo '/view/resource/css/style_categories.css'; ?>">
 <link rel="stylesheet" href="<?php echo '/view/resource/css/style_products.css'; ?>">
 <link rel="stylesheet" href="<?php echo '/view/resource/css/style_login_signup.css'; ?>">
+<link rel="stylesheet" href="<?php echo '/view/resource/css/style_shoppingCart.css'; ?>">
