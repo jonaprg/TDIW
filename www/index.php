@@ -34,6 +34,15 @@ switch ($request) {
     case 'clearCart' :
         require __DIR__ . '/resource_clearCart.php';
         break;
+    case 'restarProducto' :
+        require __DIR__ . '/resource_restarProducto.php';
+        break;
+    case 'sumarProducto' :
+        require __DIR__ . '/resource_sumarProducto.php';
+        break;
+    case 'eliminarProducto' :
+        require __DIR__ . '/resource_eliminarProducto.php';
+        break;
     case 'portada' :
     default:
         require __DIR__ . '/resource_portada.php';
