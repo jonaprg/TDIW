@@ -6,7 +6,7 @@ $(document).ready(function(){
             $.ajax(
                 {
                     type: 'GET',
-                    url: '?action=addToCart',
+                    url: 'index.php?action=addToCart',
                     data: 'id-product=' + id_product + '&quantity=' + quantity,
                     success: function (data) {
                         document.getElementById("correctAdd").innerHTML = data;

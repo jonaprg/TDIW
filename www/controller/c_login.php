@@ -20,11 +20,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' &&
         $_SESSION['userId'] = $user['id'];
         header('Location: index.php');
     }else {
-        echo "
-            <script type=\"text/javascript\">
-                let e = document.getElementById('formLogin').innerHTML = 'Incorrecte login'
-            </script>
-        ";
+        $incorrectLogin =  "Incorrecte login";
     }
 }
 require_once __DIR__ . '/../view/v_login.php';

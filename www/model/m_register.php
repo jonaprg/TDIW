@@ -4,7 +4,7 @@ require_once __DIR__ . '/connectDB.php';
 function registre(string $nom, string $email, string $password, string $poblacio, string $adreca, string $codiPostal): bool
 {
     $db_conexio = connectDB::conn();
-    if(!ifExistUserByName($nom, $email)) {
+    if(!ifExistUserByEmail($email)) {
         $sql = $db_conexio->prepare("INSERT INTO usuaris (nom, email, password, poblacio, adreca, codi_postal)
             VALUES (:nom, :email, :password, :poblacio, :adreca, :codi_postal)");
         $sql->bindValue(':nom', $nom);
@@ -20,12 +20,11 @@ function registre(string $nom, string $email, string $password, string $poblacio
     return false;
 }
 
-function ifExistUserByName(string $name, string $email): bool {
+function ifExistUserByEmail(string $email): bool {
     $conn = connectDB::conn();
     $sql = "SELECT * FROM usuaris
-        WHERE nom = :name AND email = :email";
+        WHERE email = :email";
     $query = $conn->prepare($sql);
-    $query->bindValue(':name', $name);
     $query->bindValue(':email', $email);
     $query->execute();
     return (bool) $query->fetch(PDO::FETCH_ASSOC);

@@ -2,8 +2,12 @@
 require_once __DIR__ .'/../model/connectDB.php';
 require_once __DIR__ . '/../model/m_register.php';
 
-var_dump($_POST);
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register']) && !empty($_POST['register'])){
+if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
+    isset($_POST['email']) && !empty($_POST['email'])
+    && isset($_POST['password']) && !empty($_POST['password'])
+    && isset($_POST['name']) && !empty($_POST['name'])
+    && isset($_POST['city']) && !empty($_POST['city'])
+    && isset($_POST['postal']) && !empty($_POST['postal'])){
 
     $filters = filter_input_array(
         INPUT_POST, [
@@ -25,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register']) && !empty
     if(registre($name, $email, $password_hash, $city, $address, $postal)) {
         header('Location: index.php');
     }else {
+        $incorrectRegister = "No se ha añadido el usuario, porque ya existe!";
         require_once __DIR__ . '/../view/v_register.php';
     }
 }

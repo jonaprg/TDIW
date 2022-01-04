@@ -51,9 +51,10 @@
     user-select: none;
 }
 
-.item-less:hover, .item-more:hover  {
+.item-less:hover, .item-more:hover {
     background-color: #a9b2ac;
 }
+
 .item-trash {
     background-color: #d79595;
     border-radius: 10px;
@@ -71,4 +72,18 @@
     width: 20px;
     height: auto;
     text-align: center;
+}
+
+/* CONTAINER LINIA COMANDAS */
+.container-checkout-linia {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.container-checkout-linia .shopping-cart-row-linia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
 }

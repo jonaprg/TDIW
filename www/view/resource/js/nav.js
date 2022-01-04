@@ -27,15 +27,7 @@ $(document).ready(function(){
     });
 
     $("#checkoutCart").click(function(){
-        $.ajax(
-            {
-                type:'GET',
-                url:'?action=checkoutCart',
-                success: () => {
-                    $( ".container" ).load("index.php?action=checkoutCart")
-                }
-            }
-        );
+        $( ".container" ).load("index.php?action=checkoutCart")
     });
 
 });

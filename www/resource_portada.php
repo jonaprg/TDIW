@@ -18,7 +18,4 @@
 
 </div>
 </body>
-<footer>
-    <!--<?php //unset($_SESSION['cart']) ?>-->
-</footer>
 </html>

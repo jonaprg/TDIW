@@ -1,3 +1,4 @@
+<?php echo $incorrectLogin;?>
 <form class="formulario" id="formLogin" method="POST" action="?action=login">
     <h1>Iniciar Sesión</h1>
     <div class="input-container">

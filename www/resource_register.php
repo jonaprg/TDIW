@@ -15,5 +15,6 @@
         </div>
     </div>
     </body>
+    <script type="text/javascript" src="view/resource/js/register.js"></script>
     </html>
 <?php ob_end_flush(); ?>

@@ -4,7 +4,7 @@ $(document).ready(function(){
         $.ajax(
             {
                 type:'GET',
-                url:'?action=restarProducto',
+                url:'index.php?action=restarProducto',
                 data:"id_producte=" + id_product,
                 dataType: 'json',
                 success: function(data){
@@ -15,7 +15,7 @@ $(document).ready(function(){
                         $('.container-checkout').load('index.php?action=checkoutCart');
                     }
                 },
-                error: function () {console.log("No funcionas LESS")}
+                error: function () {alert("No s'ha restat un producte")}
             }
         );
     });
@@ -25,7 +25,7 @@ $(document).ready(function(){
         $.ajax(
             {
                 type:'GET',
-                url:'?action=sumarProducto',
+                url:'index.php?action=sumarProducto',
                 data:"id_producte=" + id_product,
                 dataType: 'json',
                 success: function(data){
@@ -33,7 +33,7 @@ $(document).ready(function(){
                     $('#priceTotal-'+id_product).html(data.totalPriceProduct + " €");
                     $('#cart').load('index.php?action=summaryCart');
                 },
-                error: function () {console.log("No funcionas MORE")}
+                error: function () {alert("No s'ha afegit un producte més")}
             }
         );
     });
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $.ajax(
             {
                 type:'GET',
-                url:'?action=eliminarProducto',
+                url:'index.php?action=eliminarProducto',
                 data:"id_producte=" + id_product,
                 dataType: 'json',
                 success: function(data){
@@ -53,8 +53,14 @@ $(document).ready(function(){
                         $('.container-checkout').load('index.php?action=checkoutCart');
                     }
                 },
-                error: function () {console.log("No funcionas ELIMINAR")}
+                error: function () {alert("No s'ha eliminat el producte")}
             }
         );
     });
 });
+
+$(document).ready(() => {
+    $('#cart-confirm').click(() => {
+        $('.container').load("index.php?action=cartConfirm")
+    })
+})

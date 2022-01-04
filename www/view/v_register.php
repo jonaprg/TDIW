@@ -1,4 +1,6 @@
+
 <form class="formulario" action="?action=register" method="POST">
+    <?php echo $incorrectRegister;?>
     <h1>Regístrate</h1>
     <div class="container">
         <div class="input-container">

@@ -5,25 +5,25 @@
         <h5>TOTAL</h5>
     </div>
         <ul class="shopping-cart-row">
-        <?php foreach ($_SESSION['cart'] as $key => $value):
-            if ($_SESSION['cart'][$key]['pId']) : ?>
+        <?php foreach ($_SESSION['cart'] as $key => $item):
+            if ($item['pId']) : ?>
             <li class="clearfix">
-                <img src="<?php echo $_SESSION['cart'][$key]['image']; ?>" width="100px">
-                <span class="item-name"><h3><?php echo $_SESSION['cart'][$key]['name']; ?></h3></span>
-                <span class="item-price"><?php echo $_SESSION['cart'][$key]['price']; ?> €/unidad</span>
+                <img src="<?php echo $item['image']; ?>" width="100px">
+                <span class="item-name"><h3><?php echo $item['name']; ?></h3></span>
+                <span class="item-price"><?php echo $item['price']; ?> €/unidad</span>
                 <div class="container-quantity-total">
-                    <span class="item-less" id="<?php echo $_SESSION['cart'][$key]['pId'];?>">-</span>
-                    <span class="item-qty" id="qty-<?php echo $_SESSION['cart'][$key]['pId'];?>"><?php echo $_SESSION['cart'][$key]['qty']; ?></span>
-                    <span class="item-more" id="<?php echo $_SESSION['cart'][$key]['pId'];?>">+</span>
-                    <span class="item-total" id="priceTotal-<?php echo $_SESSION['cart'][$key]['pId'];?>"><?php echo $_SESSION['cart'][$key]['priceTotal']; ?> €</span>
+                    <span class="item-less" id="<?php echo $item['pId'];?>">-</span>
+                    <span class="item-qty" id="qty-<?php echo $item['pId'];?>"><?php echo $item['qty']; ?></span>
+                    <span class="item-more" id="<?php echo $item['pId'];?>">+</span>
+                    <span class="item-total" id="priceTotal-<?php echo $item['pId'];?>"><?php echo $item['priceTotal']; ?> €</span>
                 </div>
-                <span class="item-trash" id="<?php echo $_SESSION['cart'][$key]['pId'];?>">ELIMINAR</span>
+                <span class="item-trash" id="<?php echo $item['pId'];?>">ELIMINAR</span>
             </li>
         <?php endif;
         endforeach;?>
             <?php if(isset($_SESSION['userId'])) : ?>
             <li>
-                <button>CONFIRMAR COMPRA</button>
+                <button id="cart-confirm">CONFIRMAR COMPRA</button>
             </li>
             <?php else : ?>
             <li>
