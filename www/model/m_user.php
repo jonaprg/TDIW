@@ -13,3 +13,5 @@ function getUserByID(string $user_id): array
     return $sql->fetchAll(PDO::FETCH_ASSOC);
 }
 
+
+?>

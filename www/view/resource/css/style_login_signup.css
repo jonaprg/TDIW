@@ -46,6 +46,7 @@ input[type="email"]{
     width: 100%;
     color: white;
     font-size: 20px;
+    padding-top: 15px;
     background-color: #898980;
     padding: 15px 20px;
     border-radius: 5px;
@@ -68,9 +69,6 @@ p{
 .link:hover{
     color: #BCD0C7;
 }
-
-
-
 
 
 @media(min-width:768px)

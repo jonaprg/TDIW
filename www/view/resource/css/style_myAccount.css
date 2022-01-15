@@ -1,0 +1,48 @@
+
+.container-profile{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.container-profile h1{
+    color: #252523;
+    padding: 5px;
+}
+
+.container-profile h2,h3,h4,p{
+    color: #41413c;
+    text-align: justify;
+    padding: 8px;
+}
+
+.container-profile h3{
+    font-size: 16px;
+}
+
+.container-profile p{
+border: 2px solid rgba(169, 178, 172, 0.67);
+}
+
+.form-group {
+    float:left;
+    width:900px;
+
+}
+
+.photo{ 
+    float:right;
+    width:450px;
+}
+
+.tab{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    height:100px;
+    width:100%;
+    bottom:15%;
+}
+
+.button{
+    margin-top: 20px;
+}

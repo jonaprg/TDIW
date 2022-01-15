@@ -13,6 +13,9 @@ switch ($request) {
     case 'profile' :
         require __DIR__ . '/resource_perfil.php';
         break;
+    case 'editProfile' :
+        require __DIR__ . '/resource_UpdateProfile.php';
+        break;
     case 'products' :
         require __DIR__ . '/resource_products.php';
         break;
