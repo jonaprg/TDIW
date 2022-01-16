@@ -4,7 +4,7 @@ require_once __DIR__ . '/../model/m_user.php';
 $id = $_SESSION['userId'];
 $user = getUserByID($id);
 
-
 require_once __DIR__ . '/../view/v_actualizaPerfil.php';
 
 ?>
+

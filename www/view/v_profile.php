@@ -19,5 +19,6 @@
                     <?php endif;?>
 </div>
 <div class="tab">
-    <h5><a title="Edit porfile" href="index.php?action=editProfile">Editar datos</a></h5>
+    <a href="index.php?action=editProfile" class="button">Editar datos</a>
+
 </div>

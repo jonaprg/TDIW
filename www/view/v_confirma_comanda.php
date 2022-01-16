@@ -1,7 +1,7 @@
 <div class="container-checkout-linia">
     <ul class="shopping-cart-row">
-        <?php foreach ($comanda as $item):
-            if ($item['pId']) : ?>
+        <?php foreach ($comanda as $item): ?>
+            <?php if ($item['pId']) : ?>
                 <li class="clearfix">
                     <img src="<?php echo $item['image']; ?>" width="200px">
                     <span class="item-name"><h3><?php echo $item['name']; ?></h3></span>

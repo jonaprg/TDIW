@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS usuaris (
     poblacio varchar(50) NOT NULL,
     adreca varchar(50) NOT NULL,
     codi_postal varchar(5) not null,
+    image varchar(50)  NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -57,9 +58,9 @@ CREATE TABLE IF NOT EXISTS linies_comandes (
 );
 
 
-INSERT INTO usuaris (`nom`, `email`, `password`, `poblacio`, `adreca`, `codi_postal`)
+INSERT INTO usuaris (`nom`, `email`, `password`, `poblacio`, `adreca`, `codi_postal`, `image`)
     VALUES
-    ('admin', 'admin@admin.com', '$2a$12$a9IYraTIDvJ1FOc3GVdFIe1sjEWsVSXXTYkjfpVWtCWakpgIh1dZ2', 'Barcelona', 'Carrer admin', '08300');
+    ('admin', 'admin@admin.com', '$2a$12$a9IYraTIDvJ1FOc3GVdFIe1sjEWsVSXXTYkjfpVWtCWakpgIh1dZ2', 'Barcelona', 'Carrer admin', '08300', '/view/resource/img/profile_image/noprofil.jpg');
 
 INSERT INTO categories (`nom`, `url_image`)
     VALUES
