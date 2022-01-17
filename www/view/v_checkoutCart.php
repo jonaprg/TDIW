@@ -34,7 +34,7 @@
 
     <?php else: ?>
     <div>
-        <h5>NO HAY PRODUCTOS</h5>
+        <h5 class="confirm_cesta">NO HAY PRODUCTOS</h5>
     </div>
     <?php endif;?>
 </div>

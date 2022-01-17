@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . '/config.php';
 session_start();
+const FILE_ABSOLUT_PATH = '/var/www/html/view/resource/img/profile_image/';
+const FILE_RELATIVE_PATH = '/view/resource/img/profile_image/';
+
 $request = $_GET['action'] ?? null;
 
 switch ($request) {
@@ -14,7 +17,7 @@ switch ($request) {
         require __DIR__ . '/resource_perfil.php';
         break;
     case 'editProfile' :
-        require __DIR__ . '/resource_UpdateProfile.php';
+        require __DIR__ . '/resource_editPerfil.php';
         break;
     case 'products' :
         require __DIR__ . '/resource_products.php';
@@ -48,6 +51,9 @@ switch ($request) {
         break;
     case 'cartConfirm' :
         require __DIR__ . '/resource_cartConfirm.php';
+        break;
+    case 'pedidos' :
+        require __DIR__ . '/resource_pedidos.php';
         break;
     case 'portada' :
     default:

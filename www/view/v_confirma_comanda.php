@@ -1,16 +1,17 @@
-<div class="container-checkout-linia">
-    <ul class="shopping-cart-row">
-        <?php foreach ($comanda as $item): ?>
-            <?php if ($item['pId']) : ?>
-                <li class="clearfix">
-                    <img src="<?php echo $item['image']; ?>" width="200px">
-                    <span class="item-name"><h3><?php echo $item['name']; ?></h3></span>
-                    <span class="item-price"><?php echo $item['price']; ?> €/unidad</span>
-                    <div class="container-quantity-total">
-                        <span class="item-total" id="priceTotal-<?php echo $item['pId'];?>"><?php echo $item['priceTotal']; ?> €</span>
-                    </div>
-                </li>
-            <?php endif;
-        endforeach;?>
+<div class="container-pedidos">
+    <h2 class="title" ">PEDIDOS</h2>
+    <br>
+    <ul class="container-pedido">
+        <?php foreach ($comandas as $comanda) : ?>
+            <li class="clearfix">
+                <span class="item-data"><h4>Dia y hora: <?php echo $comanda['data']; ?></h4></span>
+                <img src="<?php echo $comanda['url_image']; ?>" width="100px">
+                <span class="item-name"><h3><?php echo $comanda['nom']; ?></h3></span>
+                <span class="item-price"><?php echo $comanda['preu_total_linia']; ?> €</span>
+                <div class="container-quantity-total">
+                    <span class="item-qty">Cantidad: <?php echo $comanda['quantitat']; ?></span>
+                </div>
+            </li>
+        <?php endforeach; ?>
     </ul>
 </div>

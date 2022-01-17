@@ -1,24 +1,49 @@
 <div class="container-profile">
-    <?php if (isset($user)) : ?>
-        <?php foreach ($user as $key => $user):
-            if ($user['id']) : ?>
-            <h1>WELCOME <?php echo $user["nom"] ?> !</h1>
-                 <h2>DATOS PERSONALES</h2>
-                 <h4> Podrás acceder y modificar tus datos personales para facilitar tus futuras compras y notificarnos cualquier cambio en tus datos de contacto.</h4>
-                 <div class="form-group">
-                     <h3>Nombre</h3><p> <?php echo $user['nom'] ?></p>
-                     <h3>Email</h3><p> <?php echo $user['email'] ?></p> 
-                     <h3>Dirección</h3><p> <?php echo $user['adreca'] ?></p>
-                     <h3>Población</h3><p> <?php echo $user['poblacio'] ?></p>
-                     <h3>Código postal</h3><p> <?php echo $user['codi_postal'] ?></p>
+    <form action="?action=editProfile" method="POST" enctype="multipart/form-data">
+        <?php if (isset($user)) : ?>
+            <h1>BIENVENIDO <?php echo $user["nom"] ?> !</h1>
+            <h3>Editar datos personales</h3>
+            <div class="form-group">
+                <div class="photo">
+                    <h3>Foto de perfil</h3>
+                    <?php if ($user['foto']) : ?>
+                        <img src="<?php echo FILE_RELATIVE_PATH . $user["foto"] ?>" alt="image_profile"
+                             id="img_profile"><br>
+                    <?php endif; ?>
+                    <input type="file" name="image" id="file" accept="image/*">
                 </div>
-                
-             
-                <?php endif;
-        endforeach;?>
-                    <?php endif;?>
-</div>
-<div class="tab">
-    <a href="index.php?action=editProfile" class="button">Editar datos</a>
+                <label>
+                    Nombre
+                    <input type="text" maxlength="30" name="nom" required placeholder="Nombre" value="<?php echo $user['nom'] ?>">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="Email" value="<?php echo $user['email'] ?> ">
+                </label>
 
+                <label>
+                    Contraseña
+                    <input type="password" name="password" placeholder="Contraseña">
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" maxlength="30" name="adreca" required placeholder="Dirección"
+                           value="<?php echo $user['adreca'] ?>">
+                </label>
+                <label>
+                    Población
+                    <input type="text" maxlength="30" name="poblacio" required placeholder="Población"
+                           value="<?php echo $user['poblacio'] ?>">
+                </label>
+                <label>
+                    Código postal
+                    <input type="text" pattern="[0-9]{5}" name="codi_postal" required placeholder="Código postal"
+                           value="<?php echo $user['codi_postal'] ?>">
+                </label>
+            </div>
+        <?php endif; ?>
+
+        <button type="submit" name="update" class="button">Actualizar</button>
+
+    </form>
 </div>

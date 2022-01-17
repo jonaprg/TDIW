@@ -61,6 +61,7 @@ $(document).ready(function(){
 
 $(document).ready(() => {
     $('#cart-confirm').click(() => {
-        $('.container').load("index.php?action=cartConfirm")
-    })
-})
+        $('.container').load("index.php?action=cartConfirm");
+        setTimeout(function(){ window.location = 'index.php?action=pedidos'; }, 2000);
+    });
+});

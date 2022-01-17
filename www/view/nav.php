@@ -14,7 +14,7 @@
             <img src="/view/resource/img/icons/icon_human.png" width="25px">
             <ul class="nav-session">
             <li class="nav-item-session"><img src="/view/resource/img/icons/icon_user.png" width="25px"><a href="?action=profile"><span>  Mi cuenta</span></a></li>
-                <li class="nav-item-session"><img src="/view/resource/img/icons/icon_shopping-bag.png" width="25px"><a href="?action=orders"><span>  Mis pedidos</span></a></li>
+                <li class="nav-item-session"><img src="/view/resource/img/icons/icon_shopping-bag.png" width="25px"><a href="?action=pedidos"><span>  Mis pedidos</span></a></li>
                 <li class="nav-item-session"><img src="/view/resource/img/icons/icon_LogOut.png" width="25px"><a href="?action=logout"><span>  Cerrar sessión</span></a></li>
             </ul>
         </li>
