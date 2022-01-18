@@ -6,11 +6,6 @@ $id = $_GET['id-product'];
 $productDetail = getDetallByProduct($id);
 $totalPrice = 0;
 $quantity = (int)$_GET['quantity'];
-/**
- * @param $id
- * @param array $productDetail
- * @param int $quantity
- */
 
 if (isset($_SESSION['cart'])) { //HAY CESTA
     $is_available = 0;
