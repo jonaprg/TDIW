@@ -5,7 +5,7 @@
                 <img src="<?php echo $category['url_image']; ?>">
             </div>
             <div class="content-category">
-                <span><?php echo $category['nom']; ?></span>
+                <span><?php echo htmlentities($category['nom'], ENT_QUOTES | ENT_HTML5, 'UTF-8');?></span>
             </div>
     </div>
     <?php endforeach;?>
